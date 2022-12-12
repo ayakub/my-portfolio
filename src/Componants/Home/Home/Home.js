@@ -3,10 +3,12 @@ import background from '../../../assests/bg.jpg'
 import TypeWriter from './TypeWriter';
 import myImage from '../../../assests/ayakub.jpg'
 import About from '../About/About';
+import Contact from '../Contact/Contact';
 
 const Home = () => {
     return (
-        <div style={{ backgroundImage: `url(${background})` }} className="py-20  w-full ">
+        <div style={{ backgroundImage: `url(${background})` }}
+            id="home" className="py-20  w-full ">
 
             <div className='lg:pl-44  grid grid-cols-1 md:grid-cols-2 items-center mx-auto'>
                 <div className="avatar">
@@ -20,6 +22,7 @@ const Home = () => {
                 </div>
             </div>
             <About></About>
+            <Contact></Contact>
         </div>
 
 

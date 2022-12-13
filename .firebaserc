@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "md-ayakub-ali"
-  }
+    "default": "md-ayakub-ali",
+    "yes": "md-ayakub-ali"
+  },
+  "targets": {},
+  "etags": {}
 }

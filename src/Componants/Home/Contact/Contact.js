@@ -7,15 +7,17 @@ const Contact = () => {
             <h2 className='text-4xl font-semibold text-primary text-center'>Contact Me</h2>
             <div className='mx-5 md:mx-0 mt-7  grid gap-10 grid-cols-1 md:grid-cols-2 items-center sm:justify-center '>
                 <div>
-                    <label ><span className="text-white text-2xl">Name</span ></label>
-                    <input type="text" placeholder="name" className="input input-bordered  w-full mt-2" /><br /><br />
-                    <label htmlFor="" className="text-white text-2xl">Email</label>
-                    <input type="Email" placeholder="your email" className="input input-bordered  w-full mt-2" /><br /><br />
-                    <label htmlFor="" className="text-white text-2xl">Message</label>
-                    <textarea className="textarea  w-full mt-2" placeholder="messsage"></textarea>
-                    <div className='flex justify-center'>
-                        <button className='btn btn-primary mt-5 w-1/2'>Submit</button>
-                    </div>
+                    <form action="https://formsubmit.co/ac3356adb300bac95ca02148fe910146" method="POST">
+                        <label ><span className="text-white text-2xl">Name</span ></label>
+                        <input name='name' type="text" placeholder="name" className="input input-bordered  w-full mt-2" /><br /><br />
+                        <label htmlFor="" className="text-white text-2xl">Email</label>
+                        <input name='email' type="Email" placeholder="your email" className="input input-bordered  w-full mt-2" /><br /><br />
+                        <label htmlFor="" className="text-white text-2xl">Message</label>
+                        <textarea name='message' className="textarea  w-full mt-2" placeholder="messsage"></textarea>
+                        <div className='flex justify-center'>
+                            <button type='submit' className='btn btn-primary mt-5 w-1/2'>Submit</button>
+                        </div>
+                    </form>
                 </div>
                 {/* mycontact */}
                 <div>

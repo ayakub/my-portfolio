@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaDownload, FaFileDownload } from 'react-icons/fa'
 import { Typewriter } from 'react-simple-typewriter'
 
 
@@ -33,7 +34,7 @@ const TypeWriter = () => {
                 </span>
             </h1>
             <div className='mt-5'>
-                <button className='btn btn-primary text-white'>Download Resume</button>
+                <button className='btn btn-primary text-white'><a target='_blank' rel="noreferrer" href="https://drive.google.com/file/d/1ISN_AYZkfy4LV32FYzwvBqgmXfwE3A64/view?usp=sharing">Resume Download</a></button>
             </div>
         </div>
     )

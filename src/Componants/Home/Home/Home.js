@@ -4,6 +4,7 @@ import TypeWriter from './TypeWriter';
 import myImage from '../../../assests/ayakub.jpg'
 import About from '../About/About';
 import Contact from '../Contact/Contact';
+import Projects from '../Projects/Projects';
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
                 </div>
             </div>
             <About></About>
+            <Projects></Projects>
             <Contact></Contact>
         </div>
 

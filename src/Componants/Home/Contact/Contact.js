@@ -3,7 +3,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaRegEnvelope } from 'react-icons/fa'
 
 const Contact = () => {
     return (
-        <div className='mt-5 lg:px-36' id='contact'>
+        <div className='mt-20 lg:px-36' id='contact'>
             <h2 className='text-4xl font-semibold text-primary text-center'>Contact Me</h2>
             <div className='mx-5 md:mx-0 mt-7  grid gap-10 grid-cols-1 md:grid-cols-2 items-center sm:justify-center '>
                 <div>

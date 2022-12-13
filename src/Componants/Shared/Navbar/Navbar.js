@@ -2,6 +2,7 @@ import React from "react";
 import background from '../../../assests/bg.jpg'
 import { FaBars, FaHome } from "react-icons/fa";
 import Font, { Text } from 'react-font'
+import { Link } from "react-router-dom";
 
 export default function Navbar({ fixed }) {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -38,12 +39,12 @@ export default function Navbar({ fixed }) {
                     >
                         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                             <li className="nav-item">
-                                <a
+                                <Link to='/'
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                                    href="#home"
+
                                 >
                                     <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Home</span>
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
                                 <a
@@ -60,6 +61,12 @@ export default function Navbar({ fixed }) {
                                 >
                                     <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Contact</span>
                                 </a>
+                                <Link to='/blog'
+                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+
+                                >
+                                    <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">blog</span>
+                                </Link>
                             </li>
                         </ul>
                     </div>

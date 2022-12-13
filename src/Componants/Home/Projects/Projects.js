@@ -4,7 +4,7 @@ import ProjectData from './ProjectData';
 const Projects = () => {
     const [projectsDetails, setProjectsDetails] = useState([])
     useEffect(() => {
-        fetch('projects.json')
+        fetch('https://porfolio-server-site.vercel.app/projectdata')
             .then(res => res.json())
             .then(data => setProjectsDetails(data))
     }, [])

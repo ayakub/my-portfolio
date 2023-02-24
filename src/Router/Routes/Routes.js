@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
             {
                 path: '/details/:id',
                 element: <Details></Details>,
-                loader: ({ params }) => fetch(`https://porfolio-server-site.vercel.app/projectdata/${params.id}`)
+                loader: ({ params }) => fetch(` https://porfolio-server-site-ayakub.vercel.app/projectdata/${params.id}`)
             }
         ]
     }

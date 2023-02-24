@@ -4,20 +4,18 @@ import { FaBars, FaHome } from "react-icons/fa";
 import Font, { Text } from 'react-font'
 import { Link } from "react-router-dom";
 
-export default function Navbar({ fixed }) {
+export default function Navbar() {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
     return (
         <>
             <nav
                 className="relative flex flex-wrap items-center justify-between px-2 py-3 "
-
                 style={{ backgroundImage: `url(${background})` }} >
                 <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <a
                             className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-primary"
-                            href="#pablo"
-                        >
+                            href="#home"      >
                             <Font family='Script'>
                                 <p>AYAKUB</p>
                             </Font>
@@ -61,12 +59,16 @@ export default function Navbar({ fixed }) {
                                 >
                                     <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Contact</span>
                                 </a>
+
+                            </li>
+                            <li className="nav-item">
                                 <Link to='/blog'
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
 
                                 >
-                                    <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">blog</span>
+                                    <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Blog</span>
                                 </Link>
+
                             </li>
                         </ul>
                     </div>
